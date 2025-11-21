@@ -23,4 +23,4 @@
 - Date: Nov , 2025
 
 ## 📸 Preview
-![Project Screenshot](https://github.com/prynix-dev/prynix-Trick2/blob/main/Screenshot.jpg.png?raw=true)
+![Project Screenshot](https://github.com/prynix-dev/megamenu/blob/main/img/Screenshot.png?raw=true)
