@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: url(img/wallpaper.png);
+        }
+
+        .head {
+            background: rgb(204, 185, 161);
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+
+            >nav {
+                width: 70%;
+                height: 100%;
+                /* border: 2px solid wheat; */
+
+                >ul {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+
+
+                    >li {
+                        list-style-type: none;
+
+                        &:hover {
+                            >ul {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+
+                        /* border: 1px solid red; */
+
+                        >a {
+                            /* background-color: rgba(245, 222, 179, 0.945); */
+                            display: flex;
+                            height: 100%;
+                            align-items: center;
+                            text-decoration: none;
+                            color: black;
+                            font-size: 18px;
+                            text-transform: capitalize;
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                            padding: 0 30px;
+                            transition: 1s;
+
+                            &:hover {
+                                background-color: rgba(128, 128, 128, 0.329);
+                            }
+
+                        }
+
+                        /* >mega scope */
+                        >ul {
+                            transition: 1s;
+                            opacity: 0;
+                            visibility: hidden;
+                            position: absolute;
+                            left: 0;
+                            top: 80px;
+                            width: 100%;
+                            height: 200px;
+                            background-color: rgba(192, 173, 148, 0.76);
+
+                            >li {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+
+                                >ul {
+                                    width: 20%;
+                                    list-style-type: none;
+                                    padding: 30px;
+                                    
+                                    >li{
+                                        padding: 6px;
+
+                                        &:nth-of-type(1){
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">gallrey</a>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>Thriller list</li>
+                                <li>Angels of Death</li>
+                                <li>Death Note</li>
+                                <li>The Promised Neverland</li>
+                                <li>Hyouka</li>
+                            </ul>
+                            <ul>
+                                <li>Romance list</li>
+                                <li>Your Name</li>
+                                <li>Howl's moving castle</li>
+                                <li>Your Lie In April</li>
+                                <li>Anohana</li>
+                            </ul>
+                            <ul>
+                                <li>Slice Of Life list</li>
+                                <li>Barakamon</li>
+                                <li>When Marnie Was There</li>
+                                <li>Piano no Mori</li>
+                                <li>Carole & Tuesday</li>
+                            </ul>
+                            <ul>
+                                <li>Sport list</li>
+                                <li>Haikyuu!!</li>
+                                <li>Free!</li>
+                                <li>Captain Tsubasa</li>
+                                <li>Yuri on Ice</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">contact</a></li>
+                <li><a href="">social</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
